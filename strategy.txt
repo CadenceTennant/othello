@@ -1,0 +1,12 @@
+/steps:
+  //1) find every opponent piece - spots to play are always next to opponent piece
+  //2) find each empty spot adjacent to each opponent piece
+  //  - then do a loop that searches in a straight line from that space, across the opponent's piece, til
+  //    it finds one of my own pieces. If this is successful (it finds one of my pieces), then the original
+  //    spot is a valid position to play. Add this position to the valid moves list.
+  //  - if no piece of my own is found in that linear line (it only finds opponent pieces or empty spaces), then
+  //    the spot we started from is NOT a valid place to play. Move to the next empty spot next to this opponent's piece
+  //    and repeat this process.
+  //3) Do the above process of searching for MY OWN piece in a linear line from an empty space adjacent to an opponent's piece
+  //   for each of the opponent's pieces that have empty spaces next to them, adding valid positions to the valid moves list.
+  //4) For now, just choose a random valid move and submit that to the server.
